@@ -8,3 +8,7 @@ To use this script, you’ll need to register to access Reddit’s API. In the s
 All you have to do is navigate to a Reddit post and copy the URL. When the script runs, it will prompt you twice in the shell. First, it returns a prompt asking for the URL, which you can paste in. Second, it returns a prompt asking you to name the file. Make sure to manually add in the .txt at the end so it produces a plain text document. These prompts are a limitation to how scalable the script can be: it still takes a bit of time as you have to get to the post you want and do the file naming.
 
 Another key limitation with the script is that on especially long discussion threads, it simply cannot collect all the comments and replies without taking an absurd amount of time. There is a section of the code that allows you to set how many ‘read more’ or ‘continue this thread’ buttons you want Python to open. I had this set at 5 for my project and found that this helped ensure that everything would be scraped pretty quickly (within a few seconds), but you may want to change that if you have more computational power or are needing a perfectly thorough collecting procedure.
+
+The script has two versions: one that includes some formatting meant to make qualitative analysis easier for a researcher, and another – the ‘clean’ version – that doesn’t include any extra formatting, good for feeding into a computational analysis. Both versions preserve the comment tree structure.
+
+All dependencies current as of January 2022.
